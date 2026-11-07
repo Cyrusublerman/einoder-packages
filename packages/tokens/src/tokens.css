@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+:root,
+html[data-preset='site'],
+html[data-preset='lab'] {
+    --vga-black: #000000;
+    --vga-maroon: #800000;
+    --vga-green: #008000;
+    --vga-olive: #808000;
+    --vga-navy: #000080;
+    --vga-purple: #800080;
+    --vga-teal: #008080;
+    --vga-silver: #c0c0c0;
+    --vga-gray: #808080;
+    --vga-red: #ff0000;
+    --vga-lime: #00ff00;
+    --vga-yellow: #ffff00;
+    --vga-blue: #0000ff;
+    --vga-fuchsia: #ff00ff;
+    --vga-aqua: #00ffff;
+    --vga-white: #ffffff;
+
+    --c-bg: var(--vga-black);
+    --c-text: var(--vga-silver);
+    --c-border: var(--vga-gray);
+    --c-accent: var(--vga-white);
+
+    --f: 14px;
+    --header-height: calc(var(--f) * 2);
+    --target-margin: calc(var(--f) * 4);
+    --layout-margin: var(--target-margin);
+    --layout-width: calc(100vw - (var(--layout-margin) * 2));
+    --header-y: var(--target-margin);
+    --subheader-y: calc(var(--header-y) + var(--header-height));
+    --footer-y: calc(100vh - var(--header-height) - var(--target-margin));
+}
+
+html.inverted {
+    --c-bg: var(--vga-white);
+    --c-text: var(--vga-black);
+    --c-border: var(--vga-gray);
+    --c-accent: var(--vga-black);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    font-family: 'Atkinson Hyperlegible', 'Atkinson Hyperlegible Mono', monospace;
+    font-size: var(--f);
+    line-height: 1.5;
+    background: var(--c-bg);
+    color: var(--c-text);
+}

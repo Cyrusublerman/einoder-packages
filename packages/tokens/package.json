@@ -1,0 +1,11 @@
+{
+  "name": "@einoder/tokens",
+  "version": "0.1.0",
+  "type": "module",
+  "exports": {
+    ".": "./src/index.js",
+    "./css": "./src/tokens.css",
+    "./presets/site": "./src/presets/site.css",
+    "./presets/lab": "./src/presets/lab.css"
+  }
+}

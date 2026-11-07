@@ -1,0 +1,12 @@
+{
+  "name": "einoder-packages",
+  "private": true,
+  "type": "module",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "lint:dom": "node scripts/lint-local-dom.mjs",
+    "dev": "npm run dev -w @einoder/dev-shell"
+  }
+}
